@@ -1,7 +1,30 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import localFont from 'next/font/local'
+
+// const favorit = localFont({
+//   src: [
+//     {
+//       path: '../public/fonts/favorit-std-light.woff',
+//       style: 'normal'
+//     },
+//     {
+//       path: '../public/fonts/favorit-std-extended-light.woff',
+//       style: 'extended'
+//     }
+//   ],
+//   variable: '--font-favorit'
+// })
+
+const favorit = localFont({
+  src: '../public/fonts/favorit-std-light.woff',
+  variable: '--font-favorit'
+})
+
+const favoritExtended = localFont({
+  src: '../public/fonts/favorit-std-extended-light.woff',
+  variable: '--font-favorit-extended'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${favorit.className} ${favoritExtended.className}`}>{children}</body>
     </html>
   )
 }
