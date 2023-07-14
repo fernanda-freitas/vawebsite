@@ -1,5 +1,4 @@
 import './globals.css'
-import ClientComponent from './components/clientComponent'
 
 import localFont from 'next/font/local'
 
@@ -22,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${favorit.variable} ${favoritExtended.variable}`}>
-        <ClientComponent content={children}></ClientComponent>
+        {children}
       </body>
     </html>
   )

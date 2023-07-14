@@ -23,12 +23,18 @@ module.exports = {
         loose: ['var(--font-favorit-extended)']
       },
       spacing: {
+        '10': '0.625', // 10px
         '15': '0.938rem', // 15px
+        '20': '1.25rem', // 20px
         '25': '1.563rem', // 25px
         '50': '3.125rem', // 50px
         '100': '6.25rem', // 100px
         '150': '9.375rem', // 150px
         '200': '12.5rem', // 200px
+        '86vh': '86vh',
+      },
+      aspectRatio: {
+        '4/3': '4 / 3',
       },
     },
   },
