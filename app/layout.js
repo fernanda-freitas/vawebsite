@@ -2,20 +2,6 @@ import './globals.css'
 
 import localFont from 'next/font/local'
 
-// const favorit = localFont({
-//   src: [
-//     {
-//       path: '../public/fonts/favorit-std-light.woff',
-//       style: 'normal'
-//     },
-//     {
-//       path: '../public/fonts/favorit-std-extended-light.woff',
-//       style: 'extended'
-//     }
-//   ],
-//   variable: '--font-favorit'
-// })
-
 const favorit = localFont({
   src: '../public/fonts/favorit-std-light.woff',
   variable: '--font-favorit'
@@ -34,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${favorit.className} ${favoritExtended.className}`}>{children}</body>
+      <body className={`${favorit.variable} ${favoritExtended.variable}`}>{children}</body>
     </html>
   )
 }
