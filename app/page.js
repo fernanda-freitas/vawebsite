@@ -1,14 +1,16 @@
+import Image from 'next/image'
+import heroImage from '../public/images/hero-video.png'
+
 export default function Home() {
+  
   return (
     <>
-      <p class="font-normal text-heading3 md:text-heading2 lg:text-heading1 col-span-12">The quick brown fox</p>
-      <p class="font-normal text-label3 md:text-label2 lg:text-label1 col-span-12">The quick brown fox</p>
-      <p class="font-normal text-p3 md:text-p2 lg:text-label1 col-span-12">The quick brown fox</p>
-      {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="text-5xl font-loose font-bold underline">Hello, Next.js!</h1>
-        <h2>Homepage</h2>
-        <p>homepage Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, porro.</p>
-      </main> */}
+      <header className='col-span-12 -mx-5'>
+        <Image src={heroImage} alt="hero image" className='object-cover w-full'/>
+      </header>
+      <div className='col-start-5 col-span-7'>
+        <h1 className='text-heading1 font-loose text-white'>We are a forward-looking studio, made up of designers & developers working on innovative brands, experiences and digital products.</h1>
+      </div>
     </>
   )
 }

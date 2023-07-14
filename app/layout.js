@@ -1,4 +1,5 @@
 import './globals.css'
+import ClientComponent from './components/clientComponent'
 
 import localFont from 'next/font/local'
 
@@ -20,9 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 mx-2.5 md:mx-15 lg:mx-5 ${favorit.variable} ${favoritExtended.variable}`}>
-        {children}
-        </body>
+      <body className={`${favorit.variable} ${favoritExtended.variable}`}>
+        <ClientComponent content={children}></ClientComponent>
+      </body>
     </html>
   )
 }
