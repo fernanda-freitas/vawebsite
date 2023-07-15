@@ -45,7 +45,7 @@ export default function ProjectPage() {
                 <Image src={zanad01} alt="Zanad iconography and brand look and feel" className='object-cover w-full h-auto bg-white'/>
             </section>
             <section className="col-span-12 grid grid-cols-4 md:grid-cols-12 z-10 bg-white py-100">
-                <p className="col-span-6 col-start-6 text-p3 md:text-p2 lg:text-p1 font-normal text-black">We began by conducting an in-depth analysis of Zanad's brand values, vision, and objectives. This information was used to develop a comprehensive brand strategy that focused on the studios strengths and unique selling points. We then created a bold and adult visual identity that contrasted with a kaleidoscope of visuals.</p>
+                <p className="col-span-6 col-start-6 text-p3 md:text-p2 lg:text-p1 font-normal text-black">We began by conducting an in-depth analysis of Zanads brand values, vision, and objectives. This information was used to develop a comprehensive brand strategy that focused on the studios strengths and unique selling points. We then created a bold and adult visual identity that contrasted with a kaleidoscope of visuals.</p>
             </section>
             <section className="col-span-12 z-10">
                 <Image src={zanad02} alt="Zanad iconography and brand look and feel" className='object-cover w-full h-auto'/>
