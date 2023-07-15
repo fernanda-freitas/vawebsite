@@ -11,6 +11,7 @@
 
 const nextConfig = {
     output: 'export',
+    basePath: '/github-pages',
 }
   
 const withVideos = require('next-videos')
