@@ -7,8 +7,8 @@ import zanadSocial from '../../public/images/zanad-social.jpg'
 export default function About() {
     return (
         <main className="grid grid-cols-4 md:grid-cols-12">
-            <header className='col-span-12 w-full fixed z-0'>
-                <Image src={heroProjectImage} alt="Zanad project hero image" className='object-cover w-full h-100vh'/>
+            <header className='col-span-12 w-full h-100vh fixed z-0'>
+                <Image src={heroProjectImage} alt="Zanad project hero image" className='object-cover w-full h-full'/>
             </header>
 
             <section className='mt-86vh col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 pb-100 pt-25 md:pb-150 lg:pt-50 lg:pb-200 z-10 px-2.5 md:px-15 lg:px-5 bg-white'>

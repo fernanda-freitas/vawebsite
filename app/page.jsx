@@ -12,8 +12,8 @@ export default function Home() {
   
   return (
     <main className='grid grid-cols-4 md:grid-cols-12'>
-      <header className='col-span-12 w-full fixed z-0'>
-        <Image src={heroImage} alt="hero image" className='object-cover w-full h-100vh'/>
+      <header className='col-span-12 w-full h-100vh fixed z-0'>
+        <Image src={heroImage} alt="hero image" className='object-cover w-full h-full'/>
         {/* <video autoPlay style={{ width: '500px', height: '500px' }}>
           <source src={heroVideo} />
         </video> */}
