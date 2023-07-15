@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import Hero from "../components/hero"
 import heroVideo from '../../public/videos/zanadprojectvideo.mp4'
 import projectVideo from '../../public/videos/zanadprojectvideo02.mp4'
 import zanad01 from '../../public/images/zanad01.svg'
@@ -11,14 +12,10 @@ import zanad06 from '../../public/images/zanad06.png'
 import zanad07 from '../../public/images/zanad07.png'
 import zanad08 from '../../public/images/zanad08.jpg'
 
-export default function About() {
+export default function ProjectPage() {
     return (
         <main className="grid grid-cols-4 md:grid-cols-12">
-            <header className='col-span-12 w-screen h-screen fixed z-0'>
-                <video autoPlay loop muted className='w-full h-full object-cover'>
-                    <source src={heroVideo} type="video/mp4"/>
-                </video>
-            </header>
+            <Hero src={heroVideo}/>
             <section className='mt-86vh col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 pt-25 md:pb-150 lg:pt-50 lg:pb-200 z-10 px-2.5 md:px-15 lg:px-5 pb-100 bg-white'>
                 <div className="col-span-12 md:col-span-3">
                     <span className="font-normal text-label3 md:text-label1 uppercase block text-black">Zanad</span>
