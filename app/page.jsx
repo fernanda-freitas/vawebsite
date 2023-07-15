@@ -14,7 +14,7 @@ export default function Home() {
   
   return (
     <main className='grid grid-cols-4 md:grid-cols-12'>
-      <HeroVideo src={heroVideo}/>
+      <HeroVideo src={heroVideo}/> 
       <motion.div
         initial={{ marginTop: "100vh" }}
         animate={{ marginTop: "86vh" }}
