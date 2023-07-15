@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <ThumbnailCard image={ThumbnailCardImg01} title="Fairly Normal" year="2021" pageLink={"#"}/>
         <ThumbnailCard image={ThumbnailCardImg02} title="A Ginjinha Espinheira" year="2021" pageLink={"#"}/>
-        <ThumbnailCard image={ThumbnailCardImg03} title="Zanad" year="2023" pageLink={"/project"}/>
+        <ThumbnailCard image={ThumbnailCardImg03} title="Zanad" year="2023" pageLink={"/work/zanad"}/>
         <ThumbnailCard image={ThumbnailCardImg04} title="Radical Futures" year="2022" pageLink={"#"}/>
         <ThumbnailCard image={ThumbnailCardImg05} title="Rosior" year="2022" pageLink={"#"}/>
       </section>
