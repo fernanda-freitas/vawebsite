@@ -5,7 +5,10 @@ import { motion } from 'framer-motion'
 export default function projectThumbnail({ title, year, image, pageLink }) {
     return (
         <Link href={pageLink} className='col-span-12 md:col-span-6 block group transition-all duration-300 ease-in-out md:mb-100'>
-            <motion.div >
+            <motion.div 
+                initial={{ opacity: 1, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}>
                 <Image src={image} alt="project thumbnail image showcasing the studio work" className='object-cover col-span-6 aspect-4/3 w-full'/>
                 <div className='flex justify-between mt-25'>
                     <div className='font-normal text-label3 md:text-label2 lg:text-label1 uppercase'>

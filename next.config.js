@@ -5,7 +5,7 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false
 let basePath = ''
 
 if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  const repo = process.env.GITHUB_REPOSITORY
   basePath = `/${repo}`
 }
 const nextConfig = {
