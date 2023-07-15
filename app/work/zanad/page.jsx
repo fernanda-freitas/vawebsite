@@ -1,8 +1,11 @@
+'use client'
+import { motion } from "framer-motion";
+
 import Image from "next/image"
 import Link from "next/link"
-import Hero from "../../components/hero"
-import heroVideo from '../../../public/videos/zanadprojectvideo.mp4'
-import projectVideo from '../../../public/videos/zanadprojectvideo02.mp4'
+import HeroImage from "../../components/heroImage"
+import heroProjectImage from '../../../public/images/hero-image.png'
+import projectVideo from '../../../public/videos/zanadprojectvideo.mp4'
 import zanad01 from '../../../public/images/zanad01.svg'
 import zanad02 from '../../../public/images/zanad02.jpg'
 import zanad03 from '../../../public/images/zanad03.png'
@@ -15,8 +18,12 @@ import zanad08 from '../../../public/images/zanad08.jpg'
 export default function ProjectPage() {
     return (
         <main className="grid grid-cols-4 md:grid-cols-12">
-            <Hero src={heroVideo}/>
-            <section className='mt-86vh col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 pt-25 md:pb-150 lg:pt-50 lg:pb-200 z-10 px-2.5 md:px-15 lg:px-5 pb-100 bg-white'>
+            <HeroImage src={heroProjectImage}/>
+            <motion.div
+                initial={{ marginTop: "100vh" }}
+                animate={{ marginTop: "86vh" }}
+                transition={{ delay: .5, duration: .5 }}
+                className="col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 pt-25 md:pb-150 lg:pt-50 lg:pb-200 z-10 px-2.5 md:px-15 lg:px-5 pb-100 bg-white">
                 <div className="col-span-12 md:col-span-3">
                     <span className="font-normal text-label3 md:text-label1 uppercase block text-black">Zanad</span>
                     <span className="font-normal text-label3 md:text-label1 uppercase text-black opacity-50">Branding for an Animation Production Studio</span>
@@ -33,7 +40,7 @@ export default function ProjectPage() {
                 <div className="col-span-12 md:col-span-6 mt-150">
                     <p className="text-p3 md:text-p2 lg:text-p1 font-normal text-black">Open House is an architecture event that takes place in many cities across the world. During a weekend, selected public and private spaces open their doors for thousands of visitors. In this fast-paced event, everyone wants to visit as many locations as possible, but the available places are limited.</p>
                 </div>
-            </section>
+            </motion.div>
             <section className="col-span-12 z-10">
                 <Image src={zanad01} alt="Zanad iconography and brand look and feel" className='object-cover w-full h-auto bg-white'/>
             </section>
