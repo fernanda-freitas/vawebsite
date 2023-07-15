@@ -1,6 +1,5 @@
 import './globals.css'
-import Navbar from './components/navbar'
-import Footer from './components/footer'
+import ClientComponent from './components/clientComponent'
 
 import localFont from 'next/font/local'
 
@@ -23,9 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${favorit.variable} ${favoritExtended.variable}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ClientComponent content={children}></ClientComponent>
       </body>
     </html>
   )
