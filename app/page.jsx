@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import ThumbnailCard from './components/thumbnail'
-import heroImage from '../public/images/hero-video.png'
-// import heroVideo from '../public/videos/homepagevideo.mp4'
+import heroVideo from '../public/videos/homepagevideo.mp4'
 import ThumbnailCardImg01 from '../public/images/thumbnail01.png'
 import ThumbnailCardImg02 from '../public/images/thumbnail02.png'
 import ThumbnailCardImg03 from '../public/images/thumbnail03.png'
@@ -12,11 +10,10 @@ export default function Home() {
   
   return (
     <main className='grid grid-cols-4 md:grid-cols-12'>
-      <header className='col-span-12 w-full h-100vh fixed z-0'>
-        <Image src={heroImage} alt="hero image" className='object-cover w-full h-full'/>
-        {/* <video autoPlay style={{ width: '500px', height: '500px' }}>
-          <source src={heroVideo} />
-        </video> */}
+      <header className='col-span-12 w-screen h-screen fixed z-0'>
+        <video autoPlay loop muted className='w-full h-full object-cover'>
+          <source src={heroVideo} type="video/mp4"/>
+        </video>
       </header>
 
       <section className='mt-86vh col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 pb-100 pt-25 md:pb-150 lg:pt-50 lg:pb-200 z-10 px-2.5 md:px-15 lg:px-5 bg-black'>
