@@ -11,7 +11,7 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/github-pages',
+    basePath: '/vawebsite',
 }
   
 const withVideos = require('next-videos')
