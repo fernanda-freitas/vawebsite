@@ -9,9 +9,14 @@
 
 /** @type {import('next').NextConfig} */
 
+const repo = 'vawebsite'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
 const nextConfig = {
     output: 'export',
-    basePath: '/vawebsite',
+    assetPrefix: assetPrefix,
+    basePath: basePath,
 }
   
 const withVideos = require('next-videos')
