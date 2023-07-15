@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 
 export default function HeroVideo({ src }) {
-    console.log(src)
     return (
         <motion.div
             initial={{ opacity: 1, height: "100vh" }}

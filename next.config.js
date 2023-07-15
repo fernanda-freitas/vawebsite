@@ -8,7 +8,6 @@ if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
   basePath = `/${repo}`
 }
-
 const nextConfig = {
   output: 'export',
   basePath: basePath,
