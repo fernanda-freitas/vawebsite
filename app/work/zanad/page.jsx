@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import Image from "next/image"
 import Link from "next/link"
 import HeroImage from "../../components/heroImage"
-import heroProjectImage from '../../../public/images/hero-image.png'
-import projectVideo from '../../../public/videos/zanadprojectvideo.mp4'
-import zanad01 from '../../../public/images/zanad01.svg'
-import zanad02 from '../../../public/images/zanad02.jpg'
-import zanad03 from '../../../public/images/zanad03.png'
-import zanad04 from '../../../public/images/zanad04.png'
-import zanad05 from '../../../public/images/zanad05.png'
-import zanad06 from '../../../public/images/zanad06.png'
-import zanad07 from '../../../public/images/zanad07.png'
-import zanad08 from '../../../public/images/zanad08.jpg'
+import heroProjectImage from './../../../public/images/hero-image.png'
+import projectVideo from './../../../public/videos/zanadprojectvideo.mp4'
+import zanad01 from './../../../public/images/zanad01.svg'
+import zanad02 from './../../../public/images/zanad02.jpg'
+import zanad03 from './../../../public/images/zanad03.png'
+import zanad04 from './../../../public/images/zanad04.png'
+import zanad05 from './../../../public/images/zanad05.png'
+import zanad06 from './../../../public/images/zanad06.png'
+import zanad07 from './../../../public/images/zanad07.png'
+import zanad08 from './../../../public/images/zanad08.jpg'
 
 export default function ProjectPage() {
     return (
