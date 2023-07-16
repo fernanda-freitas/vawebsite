@@ -6,7 +6,7 @@ import HeroVideo from './components/heroVideo'
 import heroVideo from '../public/videos/homepagevideo.mp4'
 import ThumbnailCardImg01 from './../public/images/thumbnail01.png'
 import ThumbnailCardImg02 from './../public/images/thumbnail02.png'
-import ThumbnailCardImg03 from './../public/images/thumbnail03.png'
+import ThumbnailCardImg03 from './../public/images/hero-image.png'
 import ThumbnailCardImg04 from './../public/images/thumbnail04.png'
 import ThumbnailCardImg05 from './../public/images/thumbnail05.png'
 

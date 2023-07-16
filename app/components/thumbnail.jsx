@@ -11,7 +11,7 @@ export default function ProjectThumbnail({ title, year, image, pageLink }) {
     const handleAnimation = () => {
         setIsAnimating(true)
         // Disparar a animação
-        // router.push(pageLink)
+        router.push(pageLink)
     }
 
     return (
