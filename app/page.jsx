@@ -13,6 +13,43 @@ import ThumbnailCardImg04 from './../public/images/thumbnail04.png'
 import ThumbnailCardImg05 from './../public/images/thumbnail05.png'
 
 export default function Home() {
+  const projects = [
+    {
+      id: 1,
+      image: ThumbnailCardImg01,
+      title: 'Fairly Normal',
+      year: '2021',
+      pageLink: '#'
+    },
+    {
+      id: 2,
+      image: ThumbnailCardImg02,
+      title: 'A Ginjinha Espinheira',
+      year: '2021',
+      pageLink: '#'
+    },
+    {
+      id: 3,
+      image: ThumbnailCardImg03,
+      title: 'Zanad',
+      year: '2021',
+      pageLink: '/work/zanad'
+    },
+    {
+      id: 4,
+      image: ThumbnailCardImg04,
+      title: 'A Ginjinha Espinheira',
+      year: '2021',
+      pageLink: '#'
+    },
+    {
+      id: 5,
+      image: ThumbnailCardImg05,
+      title: 'Zanad',
+      year: '2021',
+      pageLink: '/work/zanad'
+    }
+  ]
 
   return (
     <main className='grid grid-cols-4 md:grid-cols-12 relative'>
@@ -32,11 +69,12 @@ export default function Home() {
           <Label extraClasses={'text-white'}>Latest projects</Label>
           <Title extraClasses={'text-white'}>Our work ranges from Brand Design and Art Direction,to Digital Product Design and Web Development.</Title>
         </div>
-        <ThumbnailCard image={ThumbnailCardImg01} title="Fairly Normal" year="2021" pageLink={"#"}/>
-        <ThumbnailCard image={ThumbnailCardImg02} title="A Ginjinha Espinheira" year="2021" pageLink={"#"}/>
-        <ThumbnailCard image={ThumbnailCardImg03} title="Zanad" year="2023" pageLink={"/work/zanad"}/>
-        <ThumbnailCard image={ThumbnailCardImg04} title="Radical Futures" year="2022" pageLink={"#"}/>
-        <ThumbnailCard image={ThumbnailCardImg05} title="Rosior" year="2022" pageLink={"#"}/>
+
+        {projects.map((project) => (
+          <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)} key={project.id} className="col-span-12 md:col-span-6 group transition-all duration-300 ease-in-out md:mb-100 hover:cursor-pointer">
+            <ThumbnailCard image={project.image} title={project.title} year={project.year} pageLink={project.pageLink}/>
+          </motion.div>
+        ))}
       </section>
       <section className='col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 z-10 px-2.5 md:px-15 lg:px-5 bg-black'>
         <div className='col-span-12 md:col-span-6 md:col-start-7 my-100'>

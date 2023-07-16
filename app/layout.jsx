@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${favorit.variable} ${favoritExtended.variable}`}>
-        <ClientComponent content={children}></ClientComponent>
+          <ClientComponent content={children}></ClientComponent>
       </body>
     </html>
   )
