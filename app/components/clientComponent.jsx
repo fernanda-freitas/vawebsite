@@ -9,10 +9,10 @@ export default function ClientComponent({content}) {
   const isHomepage = pathname === '/'
 
     return(
-        <>
-          <Navbar />
-            {content}
-          <Footer colorVariant={isHomepage ? 'bg-black text-white' : 'bg-white text-black'}/>
-        </>
+      <>
+        <Navbar />
+          {content}
+        <Footer colorVariant={isHomepage ? 'bg-black text-white' : 'bg-white text-black'}/>
+      </>
     )
 }
