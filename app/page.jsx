@@ -1,5 +1,7 @@
 'use client'
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Title from "./components/title";
 import Label from "./components/label";
@@ -50,8 +52,13 @@ export default function Home() {
       pageLink: '/work/zanad'
     }
   ]
+  const route = useRouter()
+  const pathName = usePathname()
+  
   console.log(process.env.GITHUB_ACTIONS)
   console.log(process.env)
+  console.log(route)
+  console.log(pathName)
   
   return (
     <main className='grid grid-cols-4 md:grid-cols-12 relative'>
