@@ -50,7 +50,9 @@ export default function Home() {
       pageLink: '/work/zanad'
     }
   ]
-
+  console.log(process.env.GITHUB_ACTIONS)
+  console.log(process.env)
+  
   return (
     <main className='grid grid-cols-4 md:grid-cols-12 relative'>
       <HeroVideo src={heroVideo}/> 
