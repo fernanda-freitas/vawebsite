@@ -71,7 +71,11 @@ export default function Home() {
         </div>
 
         {projects.map((project) => (
-          <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)} key={project.id} className="col-span-12 md:col-span-6 group transition-all duration-300 ease-in-out md:mb-100 hover:cursor-pointer">
+          <motion.div 
+            layoutId={project.pageLink} 
+            key={project.id} 
+            animate={{ scale: 1 }}
+            className="col-span-12 md:col-span-6 group transition-all duration-300 ease-in-out md:mb-100 hover:cursor-pointer">
             <ThumbnailCard image={project.image} title={project.title} year={project.year} pageLink={project.pageLink}/>
           </motion.div>
         ))}
