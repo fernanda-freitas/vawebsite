@@ -15,7 +15,7 @@ import ThumbnailCardImg05 from './../public/images/thumbnail05.png'
 export default function Home() {
 
   return (
-    <main className='grid grid-cols-4 md:grid-cols-12'>
+    <main className='grid grid-cols-4 md:grid-cols-12 relative'>
       <HeroVideo src={heroVideo}/> 
       <motion.div
         initial={{ marginTop: "100vh" }}

@@ -1,26 +1,40 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, useAnimationControls } from 'framer-motion'
 
 export default function ProjectThumbnail({ title, year, image, pageLink }) {
-    const [isAnimating, setIsAnimating] = useState(false)
     const router = useRouter()
-
-    const handleAnimation = () => {
-        setIsAnimating(true)
-        // Disparar a animação
+    const controls = useAnimationControls()
+    
+    const handleAnimation = async () => {
+        controls.set({
+            position: 'relative',
+            right: 0,
+            top: 0,
+            left: 0,
+            bottom: 0,
+            // width: '100%'
+        })
+        await controls.start({
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 0,
+            // width: '100vw',
+            transition: { duration: 5 }
+        })
         router.push(pageLink)
     }
 
     return (
-        <div className='col-span-12 md:col-span-6 block group transition-all duration-300 ease-in-out md:mb-100' onClick={handleAnimation}>
+        <div className='col-span-12 md:col-span-6 block group transition-all duration-300 ease-in-out md:mb-100 hover:cursor-pointer' onClick={handleAnimation}>
                 <motion.div 
                     // initial={{ opacity: 1 }}
                     // animate={{ opacity: 0 }}
                     // exit={{ opacity: 1 }}
                     // transition={{ duration: 2, ease: 'easeOut' }}
+                    animate={controls}
                     >
                     <Image src={image} alt="project thumbnail image showcasing the studio work" className='object-cover col-span-6 aspect-4/3 w-full'/>
                 </motion.div>
