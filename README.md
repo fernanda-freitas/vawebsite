@@ -1,4 +1,4 @@
-# V-a Studio website
+# V-a Studio challenge website
 
 This two-pages website was built as part of a challenge for V-a Studio.
 
