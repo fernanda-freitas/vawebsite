@@ -14,9 +14,8 @@ export default function Navbar() {
           {open && (
           <motion.div 
             className="absolute top-0 left-0 right-0 bg-black z-20"
-            // initial={{bottom:0}}
             animate={{bottom: 0}}
-            transition={{duration: 1, ease: "easeIn"}}
+            transition={{duration: 1, ease: "easeInOut"}}
             >
           </motion.div>
           )}
