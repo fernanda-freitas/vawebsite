@@ -15,7 +15,6 @@ import ThumbnailCardImg05 from './../public/images/thumbnail05.png'
 
 export default function Home() {
   const pathName = usePathname()
-  console.log(pathName)
 
   const projects = [
     {
