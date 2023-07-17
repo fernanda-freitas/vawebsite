@@ -1,12 +1,13 @@
 'use client'
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 
 import Image from "next/image"
 import Link from "next/link"
+
 import Label from "@/app/components/label";
 import Paragraph from "@/app/components/paragraph";
 import HeroImage from "../../components/heroImage"
+
 import heroProjectImage from './../../../public/images/hero-image.png'
 import projectVideo from './../../../public/videos/zanadprojectvideo.mp4'
 import zanad01 from './../../../public/images/zanad01.svg'
@@ -19,11 +20,10 @@ import zanad07 from './../../../public/images/zanad07.png'
 import zanad08 from './../../../public/images/zanad08.jpg'
 
 export default function ProjectPage() {
-    const pathName = usePathname()
 
     return (
         <main className="grid grid-cols-4 md:grid-cols-12">
-            <HeroImage pathName={pathName} src={heroProjectImage}/>
+            <HeroImage src={heroProjectImage}/>
             <motion.div
                 initial={{ marginTop: "100vh" }}
                 animate={{ marginTop: "86vh" }}
