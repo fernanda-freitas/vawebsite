@@ -65,10 +65,10 @@ export default function ProjectPage() {
                         <source src={projectVideo} type="video/mp4"/>
                     </video>
                 </div>
-                <div className="col-span-12 md:col-span-10 md:col-start-2 grid grid-cols-4 md:grid-cols-12 gap-20 md:gap-x-50 align-middle flex">
-                    <Image src={zanad05} className="object-contain col-span-12 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
-                    <Image src={zanad06} className="object-contain col-span-12 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
-                    <Image src={zanad07} className="object-contain col-span-12 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
+                <div className="col-span-12 md:col-span-10 md:col-start-2 grid grid-cols-4 md:grid-cols-12 gap-20 md:gap-x-50 items-center flex">
+                    <Image src={zanad05} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
+                    <Image src={zanad06} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
+                    <Image src={zanad07} className="object-contain col-span-2 col-start-3 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
                 </div>
             </section>
             <section className="col-span-12 grid grid-cols-4 md:grid-cols-12 py-25 lg:pt-100 lg:pb-50 z-10 px-2.5 md:px-15 lg:px-5 z-10 bg-white">
