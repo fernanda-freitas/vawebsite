@@ -1,6 +1,6 @@
-# V-a Studio challenge website
+# V-a Studio website challenge
 
-This two-pages website was built as part of a challenge for V-a Studio.
+This is a two-page website developed as part of a challenge for the Frontend Developer position at V-a Studio.
 
 ## Preview
 
@@ -11,14 +11,14 @@ This two-pages website was built as part of a challenge for V-a Studio.
 
 To accomplish the challenge, I utilized the following technologies and tools:
 
-* **Nextjs:** Nextjs as the frontend framework for building a server-side rendering application;
+* **Nextjs:** Next.js was the frontend framework for building a server-side rendering application, providing enhanced performance and SEO benefits;
 
-* **ESlint:** Employed to ensure consistent code quality and adherence to coding standards;
+* **ESlint:** ESlint was employed to ensure consistent code quality and adherence to coding standards throughout the development process;
 
-* **Tailwind:**  Used the set of pre-built utility classes for a highly customizable and responsive screens;
+* **Tailwind:**  Tailwind CSS was used to leverage the set of pre-built utility classes, enabling a highly customizable and responsive user interface;
 
-* **Framer motion:** Employed Framer Motion library to implement smooth animations and transitions;
-
+* **Framer motion:** The Framer Motion library was implemented to create smooth animations and seamless transitions, enhancing the overall user experience;
+* 
 
 ## Getting Started
 
@@ -30,3 +30,8 @@ To accomplish the challenge, I utilized the following technologies and tools:
 
 1.  Run it with `npm run dev`
 2.  Preview it in http://localhost:3000
+
+
+## Deployment
+
+The website has been deployed and is accessible at [https://fernanda-freitas.github.io/vawebsite/](https://fernanda-freitas.github.io/vawebsite/). However, please be aware that the deployed version contains configuration bugs that still need to be addressed to ensure it functions as expected.
