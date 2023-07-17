@@ -34,4 +34,5 @@ To accomplish the challenge, I utilized the following technologies and tools:
 
 ## Deployment
 
-The website has been deployed and is accessible at [https://fernanda-freitas.github.io/vawebsite/](https://fernanda-freitas.github.io/vawebsite/). However, please be aware that the deployed version contains configuration bugs that still need to be addressed to ensure it functions as expected.
+The website has been deployed and is accessible at [https://fernanda-freitas.github.io/vawebsite/](https://fernanda-freitas.github.io/vawebsite/). However, please be aware that some adjustments are still required in the Next.js configuration in order to ensure it functions as expected with github pages.
+
