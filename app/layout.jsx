@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${favorit.variable} ${favoritExtended.variable}`}>
+      <body className={`${favorit.variable} ${favoritExtended.variable} relative`}>
           <ClientComponent content={children}></ClientComponent>
       </body>
     </html>
