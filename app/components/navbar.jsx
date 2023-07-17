@@ -13,10 +13,10 @@ export default function Navbar() {
         <>
           {open && (
           <motion.div 
-            className="absolute inset-0 bg-black opacity-1 z-20"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 0.8}}
+            className="absolute top-0 left-0 right-0 bg-black z-20"
+            // initial={{bottom:0}}
+            animate={{bottom: 0}}
+            transition={{duration: 1, ease: "easeIn"}}
             >
           </motion.div>
           )}
@@ -24,8 +24,14 @@ export default function Navbar() {
               <div className="flex justify-between items-center -mt-4 z-20">
                   <Link href="/" className={`font-normal text-label3 md:text-label1 uppercase ${open ? 'text-white' : 'text-black'} md:text-white`}>V-a studio</Link>
                   <div onClick={toggleMenu} className="md:hidden flex flex-col space-y-2 py-4 px-2 cursor-pointer">
-                      <span className={`w-8 h-0.5 ${open? 'bg-white' : 'bg-black'}`}></span>
-                      <span className={`w-8 h-0.5 ${open? 'bg-white' : 'bg-black'}`}></span>
+                      <motion.span 
+                        className={`w-8 h-0.5 ${open? 'bg-white translate-y-p5' : 'bg-black'}`}
+                        animate={ open ? { rotate: '45deg', translateY: '5px'} : {rotate: '0deg', translateY: '0px'}}>
+                      </motion.span>
+                      <motion.span 
+                        className={`w-8 h-0.5 ${open? 'bg-white -translate-y-p5' : 'bg-black'}`}
+                        animate={ open ? { rotate: '-45deg', translateY: '-5px'} : {rotate: '0deg', translateY: '0px'}}>
+                      </motion.span>
                   </div>
               </div>
               <ul className="hidden md:flex space-x-50">
@@ -35,9 +41,30 @@ export default function Navbar() {
               </ul>
               {open && (
                   <ul className="flex flex-col md:hidden mt-8 space-y-8 z-20">
-                      <li><Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">Work</Link></li>
-                      <li><Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">About</Link></li>
-                      <li><Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">Contact</Link></li>
+                      <motion.li
+                        className="relative"
+                        initial={{left: "-300px"}}
+                        animate={{ left: "0px" }}
+                        transition={{delay: .3, ease: "easeInOut"}}
+                        >
+                        <Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">Work</Link>
+                      </motion.li>
+                      <motion.li
+                        className="relative"
+                        initial={{left: "-300px"}}
+                        animate={{ left: "0px" }}
+                        transition={{delay: .4, ease: "easeInOut"}}
+                        >
+                        <Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">About</Link>
+                      </motion.li>
+                      <motion.li
+                        className="relative"
+                        initial={{left: "-300px"}}
+                        animate={{ left: "0px" }}
+                        transition={{delay: .48, ease: "easeInOut"}}
+                        >
+                        <Link href="#" className="text-heading1 font-loose md:text-label1 md:font-normal uppercase text-white">Contact</Link>
+                      </motion.li>
                   </ul>
               )}
           </div>

@@ -23,7 +23,8 @@ module.exports = {
         loose: ['var(--font-favorit-extended)']
       },
       spacing: {
-        '10': '0.625', // 10px
+        'p5': '0.344rem', // 5px
+        '10': '0.625rem', // 10px
         '15': '0.938rem', // 15px
         '20': '1.25rem', // 20px
         '30': '30px', // 30px
