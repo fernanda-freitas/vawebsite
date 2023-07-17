@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useState } from "react"
+import { motion } from "framer-motion";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false)
@@ -10,9 +11,17 @@ export default function Navbar() {
 
     return (
         <>
-          <div className={open ? 'absolute inset-0 bg-black opacity-1 z-20' : ''}></div>
+          {open && (
+          <motion.div 
+            className="absolute inset-0 bg-black opacity-1 z-20"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 0.8}}
+            >
+          </motion.div>
+          )}
           <div className="fixed top-0 z-20 block md:flex justify-between w-full py-25 px-2.5 md:px-15 lg:px-5 pb-25 text-black md:text-white md:mix-blend-difference">
-              <div className="flex justify-between align-middle z-20">
+              <div className="flex justify-between items-center -mt-4 z-20">
                   <Link href="/" className={`font-normal text-label3 md:text-label1 uppercase ${open ? 'text-white' : 'text-black'} md:text-white`}>V-a studio</Link>
                   <div onClick={toggleMenu} className="md:hidden flex flex-col space-y-2 py-4 px-2 cursor-pointer">
                       <span className={`w-8 h-0.5 ${open? 'bg-white' : 'bg-black'}`}></span>
