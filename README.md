@@ -18,7 +18,7 @@ To accomplish the challenge, I utilized the following technologies and tools:
 * **Tailwind:**  Tailwind CSS was used to leverage the set of pre-built utility classes, enabling a highly customizable and responsive user interface;
 
 * **Framer motion:** The Framer Motion library was implemented to create smooth animations and seamless transitions, enhancing the overall user experience;
-* 
+
 
 ## Getting Started
 
