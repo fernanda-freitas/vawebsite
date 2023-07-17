@@ -1,14 +1,15 @@
 # V-a Studio website
 
-This is a website built for V-a Studio. It contains two pages, the homepage and one project page.
+This two-pages website was built as part of a challenge for V-a Studio.
 
 ## Preview
 
-Add images here 
+<img width="895" alt="Screenshot 2023-07-17 at 19 03 47" src="https://github.com/fernanda-freitas/vawebsite/assets/33285862/4c6f28be-e88c-4d09-8c63-719fea95fc1a">
+
 
 ## Technologies Used
 
-To accomplish this challenge, I utilized the following technologies and tools:
+To accomplish the challenge, I utilized the following technologies and tools:
 
 * **Nextjs:** Nextjs as the frontend framework for building a server-side rendering application;
 
