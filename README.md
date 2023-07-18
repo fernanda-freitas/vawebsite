@@ -4,7 +4,7 @@ This is a two-page website developed as part of a challenge for the Frontend Dev
 
 ## Preview
 
-<img width="895" alt="Screenshot 2023-07-17 at 19 03 47" src="https://github.com/fernanda-freitas/vawebsite/assets/33285862/4c6f28be-e88c-4d09-8c63-719fea95fc1a">
+<img width="895" alt="Project screenshot" src="https://github.com/fernanda-freitas/vawebsite/assets/33285862/4c6f28be-e88c-4d09-8c63-719fea95fc1a">
 
 
 ## Technologies Used

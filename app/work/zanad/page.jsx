@@ -53,11 +53,11 @@ export default function ProjectPage() {
                 <Paragraph extraClasses={'col-span-6 col-start-6 text-black'}>We began by conducting an in-depth analysis of Zanads brand values, vision, and objectives. This information was used to develop a comprehensive brand strategy that focused on the studios strengths and unique selling points. We then created a bold and adult visual identity that contrasted with a kaleidoscope of visuals.</Paragraph>
             </section>
             <section className="col-span-12 z-10">
-                <Image src={zanad02} alt="Zanad iconography and brand look and feel" className='object-cover w-full h-auto'/>
+                <Image src={zanad02} alt="Various Instagram posts of the zanad tv account" className='object-cover w-full h-auto'/>
             </section>
             <section className="col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 px-2.5 md:px-15 lg:px-5 z-10 bg-white py-25 md:py-50 lg:py-100">
-                <Image src={zanad03} className="col-span-12 md:col-span-6 w-full" alt="A picture on the left side of the page showcasing the project made for the Zanad client"/>
-                <Image src={zanad04} className="col-span-12 md:col-span-6 w-full" alt="A picture on the right side of the page showcasing the project made for Zanad client"/>
+                <Image src={zanad03} className="col-span-12 md:col-span-6 w-full" alt="Screenshot of the produced website showcasing the project"/>
+                <Image src={zanad04} className="col-span-12 md:col-span-6 w-full" alt="Screenshot of the produced website showcasing the project"/>
             </section>
             <section className="col-span-12 grid grid-cols-4 md:grid-cols-12 gap-2.5 md:gap-15 lg:gap-5 py-20 md:py-50 lg:py-100 z-10 px-2.5 md:px-15 lg:px-5 z-10 bg-gray-100">
                 <div className="col-span-12 md:col-span-10 md:col-start-2 w-full pb-100">
@@ -66,13 +66,13 @@ export default function ProjectPage() {
                     </video>
                 </div>
                 <div className="col-span-12 md:col-span-10 md:col-start-2 grid grid-cols-4 md:grid-cols-12 gap-20 md:gap-x-50 items-center flex">
-                    <Image src={zanad05} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
-                    <Image src={zanad06} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
-                    <Image src={zanad07} className="object-contain col-span-2 col-start-3 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of project"/>
+                    <Image src={zanad05} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of website"/>
+                    <Image src={zanad06} className="object-contain col-span-2 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of website"/>
+                    <Image src={zanad07} className="object-contain col-span-2 col-start-3 md:col-span-4 self-center" alt="Mobile screen showcasing the mobile version of website"/>
                 </div>
             </section>
             <section className="col-span-12 grid grid-cols-4 md:grid-cols-12 py-25 lg:pt-100 lg:pb-50 z-10 px-2.5 md:px-15 lg:px-5 z-10 bg-white">
-                <Image src={zanad08} className="col-span-12 w-full" alt="A picture on the left side of the page showcasing the project made for the Zanad client"/>
+                <Image src={zanad08} className="col-span-12 w-full" alt="A simple business card for Zanad containing the logotype and person's information"/>
             </section>
         </main>
     )
