@@ -1,6 +1,6 @@
 # V-a Studio website challenge
 
-This is a two-page website developed as part of a challenge for the Frontend Developer position at V-a Studio.
+This is a two-page website developed as part of a challenge for V-a Studio.
 
 ## Preview
 
